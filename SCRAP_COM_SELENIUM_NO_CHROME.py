@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 # Caminho para o ChromeDriver
-driver_path = r"C:\Users\gonca\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
+driver_path = r"endereco_do_driver_no_seu_computador\chromedriver.exe"
 service = Service(driver_path)
 
 # Função para realizar o scroll
@@ -44,7 +44,7 @@ def scrape_all_pages():
 
     try:
         # URL inicial
-        base_url = "https://mafreimoveis.com.br/imoveis/"
+        base_url = "endereco_da_url_do_site"
         driver.get(base_url)
         time.sleep(5)  # Espera inicial para carregar a página
 
